@@ -1,73 +1,73 @@
-.container{
+.container {
     margin-top: 5rem;
-    height: calc(100vh - 60px);
-    width: 100%;
-}
-
-.wrapper{
-    width: 85%;
-    margin: 0 auto;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.wrapper > h2{
+   
+  }
+  
+  .wrapper {
+    width: 450px; /* Increase the width of the wrapper */
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff; /* Add a background color to the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    background-color: #bdc3c3; 
+  }
+  
+  .wrapper > h2 {
     font-size: 32px;
     color: #222;
     letter-spacing: 1px;
-}
-
-.wrapper > form{
-    margin-top: 2rem;
-    width: 20%;
-    padding: 1.5rem;
-    border: 1px solid #666;
-    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .wrapper > form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.wrapper > form > input{
+    gap: 1.5rem;
+  }
+  
+  .wrapper > form > input {
     outline: none;
     border: none;
-    border-bottom: 1px solid #666;
+    border-radius: 4px;
     padding: 0.5rem;
-}
-
-.submitButton{
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submitButton {
     outline: none;
     padding: 0.5rem 1rem;
-    border: 1px solid transparent;
+    border: none;
+    border-radius: 4px;
     font-size: 17px;
     font-weight: bold;
-    background-color: #efefef;
-    color: #22ab22;
+    background-color: #22ab22;
+    color: #fff;
     cursor: pointer;
     transition: 150ms;
     letter-spacing: 0.5px;
-}
-
-.submitButton:hover{
-    border-color: #22ab22;
-    background-color: #22ab22;
-    color: #efefef;
-}
-
-.loginNow{
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-size: 18px;
+  }
+  
+  .submitButton:hover {
+    background-color: #1a8c1a;
+  }
+  
+  .loginNow {
+    color: #555;
+    text-decoration: underline;
+    font-size: 16px;
     margin-top: 1.75rem;
     cursor: pointer;
-    text-align: center;
     transition: 150ms;
-}
-
-.loginNow:hover{
-    color: #555;
-}
+  }
+  
+  .loginNow:hover {
+    color: #333;
+  }
+  

@@ -9,8 +9,8 @@ import { useRouter } from 'next/navigation'
 import { AiOutlineFileImage } from 'react-icons/ai'
 
 const Edit = (ctx) => {
-    const CLOUD_NAME = 'doojo83ea'
-    const UPLOAD_PRESET = 'my_blog_project_webdevmania'
+    const CLOUD_NAME = 'dq4ude35h'
+    const UPLOAD_PRESET = 'my_blog_page'
     const [title, setTitle] = useState("")
     const [desc, setDesc] = useState("")
     const [category, setCategory] = useState("Nature")

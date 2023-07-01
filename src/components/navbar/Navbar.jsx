@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <h2 className={classes.left}>
-          <Link href="/">WebDevMania</Link>
+          <Link href="/">Blog Page</Link>
         </h2>
         <ul className={classes.right}>
           {
@@ -41,7 +41,7 @@ const Navbar = () => {
               : (
                 <>
                   <button onClick={() => {signIn()}} className={classes.login}>Log in</button>
-                  <Link href='/register'>Register</Link>
+                  <Link className={classes.register} href='/register'>Register</Link>
                 </>
               )
           }
