@@ -26,7 +26,7 @@ const Register = () => {
     }
 
     try {
-        const res = await fetch('https://next-js-blogpage.vercel.app/api/register', {
+        const res = await fetch('http://localhost:3000/api/register', {
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -63,7 +63,7 @@ const Register = () => {
                        Already have an account? <br /> Login now.
                     </button> */}
                 </form>
-                <Link className={classes.registerNow} href="https://next-js-blogpage.vercel.app/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fregister"> Already have an account? <br /> Login now</Link>
+                <Link className={classes.registerNow} href="http://localhost:3000/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fregister"> Already have an account? <br /> Login now</Link>
             </div>
             <ToastContainer />
         </div>
