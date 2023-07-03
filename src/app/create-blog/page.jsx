@@ -42,7 +42,7 @@ const CreateBlog = () => {
         try {
           const imageUrl = await uploadImage()
           
-          const res = await fetch(`http://localhost:3000/api/blog`, {
+          const res = await fetch(`https://next-js-blog-1ivgxje24-mayukh360.vercel.app/api/blog`, {
             headers: {
                'Content-Type': 'application/json',
                'Authorization': `Bearer ${session?.user?.accessToken}` 

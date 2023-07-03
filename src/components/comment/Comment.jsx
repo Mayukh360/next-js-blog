@@ -12,7 +12,7 @@ const Comment = ({comment, setComments}) => {
 
   const handleDeleteComment = async() => {
     try {
-      await fetch(`http://localhost:3000/api/comment/${comment?._id}`, {
+      await fetch(`https://next-js-blog-1ivgxje24-mayukh360.vercel.app/api/comment/${comment?._id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         },
