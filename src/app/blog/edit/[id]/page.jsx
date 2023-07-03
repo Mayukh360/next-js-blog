@@ -20,7 +20,7 @@ const Edit = (ctx) => {
 
     useEffect(() => {
         async function fetchBlog() {
-            const res = await fetch(`https://next-js-blog-1ivgxje24-mayukh360.vercel.app/api/blog/${ctx.params.id}`)
+            const res = await fetch(`https://next-js-blog-beta-eight.vercel.app/api/blog/${ctx.params.id}`)
 
             const blog = await res.json()
 
@@ -64,7 +64,7 @@ const Edit = (ctx) => {
                 body.imageUrl = imageUrl
             }
             
-            const res = await fetch(`https://next-js-blog-1ivgxje24-mayukh360.vercel.app/api/blog/${ctx.params.id}`, {
+            const res = await fetch(`https://next-js-blog-beta-eight.vercel.app/api/blog/${ctx.params.id}`, {
                 headers: {
                     "Content-Type": 'application/json',
                     "Authorization": `Bearer ${session?.user?.accessToken}`
